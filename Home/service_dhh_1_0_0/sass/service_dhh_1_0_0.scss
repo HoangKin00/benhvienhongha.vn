@@ -1,0 +1,150 @@
+.service_dhh_1_0_0 {
+    padding: 30px 0;
+    &__title {
+        font-size: 25px;
+        text-align: center;
+        font-weight: 600;
+        color: #ef4023;
+        text-transform: uppercase;
+        padding-bottom: 20px;
+    }
+    &__box {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+    &__item {
+        width: 33%;
+    }
+    &__pic {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    &__text {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 20px;
+        text-align: center;
+        padding: 10px 0 15px;
+        color: #00abe5;
+    }
+    &__detail {
+        background-color: #00abe5;
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__note {
+        padding: 15px 30px;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        font-size: 18px;
+        img {
+            padding: 0 5px;
+        }
+    }
+    &__form {
+        display: flex;
+        width: 65%;
+        margin-right: 20px;
+        input {
+            color: #3d82be;
+            font-weight: 600;
+            border: none;
+            border-radius: 5px;
+            padding: 7px 12px;
+            margin: 0 5px;
+            width: 100%;
+        }
+    }
+    &__btn input {
+        padding: 7px 25px;
+        color: #fff;
+        background-color: #dc3721;
+    }
+    @media (max-width: 1180px) {
+        &__title {
+            font-size: 23px;
+        }
+        &__text {
+            font-size: 18px;
+            padding: 10px 0;
+        }
+        &__form {
+            width: 66%;
+            input {
+                margin: 0 5px;
+            }
+        }
+    }
+    @media (max-width: 912px) {
+        &__text {
+            font-size: 16px;
+        }
+        &__note {
+            padding: 15px 0 15px 15px;
+            font-size: 17px;
+        }
+        &__btn input {
+            font-size: 15px;
+            width: 100%;
+            font-size: 13px;
+            padding: 9px 15px;
+        }
+    }
+    @media (max-width: 428px) {
+        &__title {
+            font-size: 22px;
+        }
+        &__box {
+            gap: 10px;
+        }
+        &__text {
+            font-size: 14px;
+            padding: 5px 0 10px;
+        }
+        &__detail {
+            flex-direction: column;
+            padding-bottom: 15px;
+        }
+        &__note {
+            width: 100%;
+            padding: 15px 0px 5px 15px;
+        }
+        &__form {
+            width: 90%;
+            flex-direction: column;
+            margin-right: 0;
+            input {
+                width: 100%;
+                margin: 5px auto;
+            }
+        }
+        &__btn input {
+            text-align: center;
+        }
+    }
+    @media (max-width: 320px) {
+        &__title {
+            font-size: 20px;
+        }
+        &__text {
+            font-size: 12px;
+        }
+        &__box {
+            flex-direction: column;
+        }
+        &__item {
+            width: 100%;
+        }
+        &__text {
+            font-size: 15px;
+        }
+    }
+}

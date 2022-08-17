@@ -1,0 +1,32 @@
+.slider_dhh_1_1_0 {
+    padding: 30px 0 0;
+    &__box {
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+    &__btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        button {
+            cursor: pointer;
+            display: block;
+            margin-left: 5px;
+            width: 10px;
+            height: 10px;
+            border: none;
+            background: #00abe5;
+            border-radius: 50%;
+            padding: 0;
+        }
+        .btn--active {
+            background: #ff2c02;
+        }
+    }
+    @media(max-width: 767px) {
+        padding: 20px 0 0;
+    }
+}
