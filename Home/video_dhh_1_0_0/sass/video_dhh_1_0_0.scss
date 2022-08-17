@@ -28,7 +28,6 @@
         img {
             width: 100%;
             display: block;
-            height: auto;
             opacity: .5;
         }
          :hover {
@@ -132,6 +131,25 @@
             font-size: 16px;
         }
     }
+    @media (max-width:768px) {
+        &__video1 {
+            width: 100%;
+        }
+        &__video2 {
+            width: 100%;
+            display: flex;
+        }
+        &__detail {
+            flex-direction: column;
+        }
+        &__pic2 {
+            width: 95%;
+            margin-bottom: 10px;
+        }
+        &__text {
+            width: 93%;
+        }
+    }
     @media (max-width: 767px) {
         &__title {
             font-size: 19px;
@@ -145,13 +163,26 @@
         }
         &__video2 {
             width: 100%;
+            flex-direction: column;
         }
         &__desc {
             position: absolute;
             padding: 10px;
+            bottom: 0;
         }
         &__text {
-            font-size: 15px;
+            font-size: 14px;
+            width: 50%;
+        }
+        &__detail {
+            display: flex;
+            flex-direction: revert;
+        }
+        &__pic2 {
+            width: 48%;
+        }
+        &__pic img {
+            height: auto;
         }
     }
     @media (max-width: 390px) {
@@ -167,7 +198,8 @@
             font-size: 15px;
         }
         &__text {
-            width: 72%;
+            width: 65%;
+            font-size: 14px;
         }
         &__detail {
             align-items: center;

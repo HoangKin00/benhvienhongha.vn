@@ -30,7 +30,7 @@
 .new_dhh_1_0_0__text {
   font-size: 15px;
   padding: 0 5px;
-  color: #266ca8;
+  color: #000;
 }
 @media (max-width: 1180px) {
   .new_dhh_1_0_0__item {
@@ -46,6 +46,9 @@
   }
 }
 @media (max-width: 428px) {
+  .new_dhh_1_0_0 {
+    padding: 20px 0 25px;
+  }
   .new_dhh_1_0_0__title {
     font-size: 22px;
     padding: 0px 0 10px;

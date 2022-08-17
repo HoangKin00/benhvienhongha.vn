@@ -47,7 +47,7 @@
   list-style: none;
 }
 .doctor_dhh_1_0_0 ul li {
-  color: #054b94;
+  color: #000;
 }
 .doctor_dhh_1_0_0__list {
   display: flex;
@@ -126,6 +126,9 @@
 }
 @media (max-width: 280px) {
   .doctor_dhh_1_0_0__name p {
-    font-size: 20px;
+    font-size: 17px;
+  }
+  .doctor_dhh_1_0_0__item {
+    width: 17%;
   }
 }/*# sourceMappingURL=doctor_dhh_1_0_0.css.map */
