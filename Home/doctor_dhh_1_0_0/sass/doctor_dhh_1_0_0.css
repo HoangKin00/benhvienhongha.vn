@@ -4,6 +4,9 @@
   min-height: auto;
   padding: 30px 0;
 }
+.doctor_dhh_1_0_0 h3:before {
+  position: absolute !important;
+}
 .doctor_dhh_1_0_0__title {
   font-size: 25px;
   color: #033e8f;
@@ -36,6 +39,9 @@
   color: red;
   font-weight: 500;
   margin: 0;
+}
+.doctor_dhh_1_0_0__name {
+  position: relative;
 }
 .doctor_dhh_1_0_0__name p {
   font-size: 20px;

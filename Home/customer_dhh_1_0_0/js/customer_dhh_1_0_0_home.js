@@ -200,7 +200,7 @@ function addSlider(number, data) {
         }
         addHTML(index, data);
         index++;
-    }, 3000);
+    }, 9000);
 }
 
 addSlider(0, slider01);

@@ -2,6 +2,9 @@
   color: #266ca8;
   padding: 30px 0;
 }
+.new_dhh_1_0_0 h3:before {
+  position: absolute !important;
+}
 .new_dhh_1_0_0__title {
   font-size: 25px;
   text-transform: uppercase;
@@ -20,6 +23,7 @@
   align-items: center;
   font-weight: 600;
   font-style: italic;
+  position: relative;
 }
 .new_dhh_1_0_0__des {
   background-color: #ff2c02;

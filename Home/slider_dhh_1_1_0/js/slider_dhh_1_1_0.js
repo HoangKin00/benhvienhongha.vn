@@ -39,14 +39,14 @@ const slideShow = (idx) => {
 }
 let index = 1;
 
-function autoRun() {
-    if (index >= slider_dhh_1_1_0__data.length) {
-        index = 0;
-    }
-    slideShow(index);
-    index++;
-}
+// function autoRun() {
+//     if (index >= slider_dhh_1_1_0__data.length) {
+//         index = 0;
+//     }
+//     slideShow(index);
+//     index++;
+// }
 slideShow(0)
-setInterval(() => {
-    autoRun();
-}, 6000)
+    // setInterval(() => {
+    //     autoRun();
+    // }, 6000)

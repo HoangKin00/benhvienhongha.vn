@@ -26,6 +26,9 @@
   padding: 10px 0;
   z-index: 9999;
 }
+.header_dhh_1_1_0 h1:before {
+  position: absolute !important;
+}
 .header_dhh_1_1_0__flag {
   position: relative;
   max-width: 1063px;
@@ -56,6 +59,7 @@
 }
 .header_dhh_1_1_0__logo {
   margin-bottom: 5px;
+  position: relative;
 }
 .header_dhh_1_1_0__logo img {
   display: block;

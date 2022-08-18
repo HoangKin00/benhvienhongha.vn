@@ -1,4 +1,7 @@
 .service_dhh_1_0_0 {
+    h2:before {
+        position: absolute !important;
+    }
     padding: 30px 0;
     &__title {
         font-size: 25px;
@@ -29,6 +32,7 @@
         text-align: center;
         padding: 10px 0 15px;
         color: #00abe5;
+        position: relative;
     }
     &__detail {
         background-color: #00abe5;
