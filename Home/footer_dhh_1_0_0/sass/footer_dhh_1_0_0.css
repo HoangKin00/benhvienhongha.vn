@@ -72,6 +72,9 @@
   .footer_dhh_1_0_0__pic2 img {
     width: 34%;
   }
+  .footer_dhh_1_0_0__note {
+    font-size: 13px;
+  }
 }
 @media (max-width: 768px) {
   .footer_dhh_1_0_0__pic2 img {

@@ -7,7 +7,7 @@ const doctor = [{
             <li>- Tốt nghiệp bác sĩ đa khoa - Đại học Y Hà Nội</li>
             <li>- Bác sĩ chuyên khoa hồi sức cấp cứu - Bệnh Viện nhiệt đới trung ương</li>
             <li>- Bác sĩ chuyên khoa phẫu thuật tạo hình thẩm mỹ - Đại học y Hà Nội</li>
-            <li>- Bác sĩ thẩm mỹ chuyên khoa thẩm mỹ Kangnam</li>
+            <li>- Bác sĩ thẩm mỹ chuyên khoa thẩm mỹ Hồng Hà</li>
             <li>- Thành viên hiệp hội Thẩm mỹ Hàn quốc</li>
             <li>- 10 năm tu nghiệp tại Hàn Quốc</li>
         </ul
@@ -59,6 +59,17 @@ const doctor = [{
     <li>- Tốt nghiệp Đại học Y Hà Nội</li>
 </ul>`
     },
+    {
+        service: "Bác sĩ",
+        name: "ROBERT NGUYỄN",
+        img: "Home/doctor_dhh_1_0_0/images/doctor-pic6.jpg",
+        info: `   <ul>
+    <li>- Chuyên gia hàng đầu trong lĩnh vực PTTM</li>
+    <li>- Thành viên hiệp hội PTTM Hàn Quốc</li>
+    <li>- 15 năm kinh nghiệm PTTM tạo hình khuôn mặt và vóc dáng</li>
+    <li>- Thực hiện thành công > 1000 ca PTTM mỗi năm</li>
+</ul>`
+    },
 ];
 
 const doctorItem = document.getElementsByClassName("doctor_dhh_1_0_0__item");
@@ -87,3 +98,18 @@ for (let i = 0; i < doctorItem.length; i++) {
         doctorBox.innerHTML = HTML;
     });
 }
+
+function setActiveDoctor(element, className, event) {
+    let elements = document.querySelectorAll(element);
+
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].addEventListener(event, function(event) {
+            [].forEach.call(elements, function(el) {
+                el.classList.remove(className);
+            });
+            this.classList.add(className);
+        });
+    }
+}
+
+setActiveDoctor(".doctor_dhh_1_0_0__item", "active", "click");
