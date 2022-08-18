@@ -89,9 +89,9 @@ for (let i = 0; i < doctorItem.length; i++) {
                 ${doctor[i].service}
             </p>
         </div>
-        <div class="doctor_dhh_1_0_0__name">
+        <h2 class="doctor_dhh_1_0_0__name">
             <p>${doctor[i].name}</p>
-        </div>
+        </h2>
         ${doctor[i].info}
     </div>`;
         console.log(HTML)
