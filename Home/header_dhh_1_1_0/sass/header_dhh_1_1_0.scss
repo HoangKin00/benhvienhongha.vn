@@ -48,13 +48,12 @@
         align-items: flex-end;
     }
     &__logo {
-        margin-bottom: 5px;
         position: relative;
+        margin: 0;
         img {
             display: block;
-            width: 80%;
-            max-width: 200px;
-            height: auto;
+            max-width: 160px;
+            height: fit-content;
         }
     }
     &__contact {
@@ -116,6 +115,7 @@
             }
         }
         &Title {
+            display: block;
             font-size: 14px;
             text-transform: uppercase;
             font-weight: 600;
@@ -278,14 +278,22 @@
             }
             &Item {
                 width: 100%;
-                &:hover {
-                    .header_dhh_1_1_0__dropdown {
-                        display: block;
-                    }
-                }
             }
             &Item:last-child {
                 display: none;
+            }
+        }
+        .haveDropdown {
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                left: 0;
+                height: 42px;
+                top: 0;
+                z-index: 2;
+                cursor: pointer;
             }
         }
         &__dropdown {
@@ -399,6 +407,15 @@
             button {
                 width: 30px;
                 height: 30px;
+            }
+        }
+    }
+    @media(max-width: 280px) {
+        &__logo {
+            img {
+                display: block;
+                max-width: 125px;
+                height: fit-content;
             }
         }
     }
