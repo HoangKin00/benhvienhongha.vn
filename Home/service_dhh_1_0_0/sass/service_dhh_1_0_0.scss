@@ -61,6 +61,7 @@
         display: flex;
         width: 65%;
         margin-right: 20px;
+        gap: 10px;
         input {
             color: #3d82be;
             font-weight: 600;
@@ -139,6 +140,7 @@
             width: 90%;
             flex-direction: column;
             margin-right: 0;
+            gap: 0;
             input {
                 width: 100%;
                 margin: 5px auto;
