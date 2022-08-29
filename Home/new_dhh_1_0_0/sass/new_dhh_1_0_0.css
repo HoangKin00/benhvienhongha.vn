@@ -20,7 +20,7 @@
 .new_dhh_1_0_0__item {
   width: 32%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   font-weight: 600;
   font-style: italic;
   position: relative;
@@ -30,6 +30,7 @@
   padding: 0 5px;
   font-size: 11px;
   color: #fff;
+  margin-top: 5px;
 }
 .new_dhh_1_0_0__text {
   font-size: 15px;
