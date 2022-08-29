@@ -114,6 +114,12 @@ article {
   text-align: center;
 }
 
+.icon img {
+  width: 55px;
+  height: auto;
+  display: block;
+  margin: 0 auto 5px;
+}
 @media (max-width: 428px) {
   .icon img {
     width: 40px;
