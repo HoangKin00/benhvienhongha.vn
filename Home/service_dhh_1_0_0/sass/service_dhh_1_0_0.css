@@ -52,6 +52,9 @@
 }
 .service_dhh_1_0_0__note img {
   margin-right: 5px;
+  width: 35px;
+  height: auto;
+  display: block;
 }
 .service_dhh_1_0_0__form {
   display: flex;
@@ -130,7 +133,8 @@
   }
   .service_dhh_1_0_0__note {
     width: 100%;
-    padding: 15px 0px 5px 15px;
+    margin: 0px 0px 5px 15px;
+    padding: 0;
   }
   .service_dhh_1_0_0__form {
     width: 90%;

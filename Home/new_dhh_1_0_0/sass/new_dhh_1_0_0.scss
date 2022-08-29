@@ -34,6 +34,7 @@
         font-size: 15px;
         padding: 0 5px;
         color: #000;
+        margin: 0;
     }
     @media (max-width: 1180px) {
         &__item {
@@ -49,14 +50,15 @@
         }
     }
     @media (max-width: 428px) {
-        padding: 20px 0 25px;
+        padding: 20px 0;
         &__title {
-            font-size: 22px;
-            padding: 0px 0 10px;
+            font-size: 18px;
             text-align: center;
+            margin-bottom: 10px;
         }
         &__box {
             flex-direction: column;
+            gap: 10px
         }
         &__item {
             width: 100%;
