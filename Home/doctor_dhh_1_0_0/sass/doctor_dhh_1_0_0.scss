@@ -123,7 +123,7 @@
         }
     }
     &__title {
-        font-size: 17px;
+        font-size: 25px;
     }
     &__list {
         flex-wrap: wrap;
@@ -136,6 +136,11 @@
     &__name {
         font-size: 16px;
         margin: 0;
+    }
+    @media(max-width:767px) {
+        &__title {
+            font-size: 17px;
+        }
     }
     @media (max-width: 320px) {
         &__title {

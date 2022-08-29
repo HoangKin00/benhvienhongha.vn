@@ -122,7 +122,7 @@
   }
 }
 .doctor_dhh_1_0_0__title {
-  font-size: 17px;
+  font-size: 25px;
 }
 .doctor_dhh_1_0_0__list {
   flex-wrap: wrap;
@@ -135,6 +135,11 @@
 .doctor_dhh_1_0_0__name {
   font-size: 16px;
   margin: 0;
+}
+@media (max-width: 767px) {
+  .doctor_dhh_1_0_0__title {
+    font-size: 17px;
+  }
 }
 @media (max-width: 320px) {
   .doctor_dhh_1_0_0__title {

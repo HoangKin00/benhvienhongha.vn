@@ -26,14 +26,14 @@
 }
 .footer_dhh_1_0_0__pic1 {
   width: 80%;
-  margin: 0 auto;
 }
 .footer_dhh_1_0_0__pic2 {
   display: flex;
   padding-top: 10px;
   gap: 10px;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  width: 80%;
 }
 .footer_dhh_1_0_0__pic2 img {
   height: auto;
@@ -55,8 +55,8 @@
 }
 .footer_dhh_1_0_0__note {
   color: #fff;
-  padding-top: 20px;
-  font-size: 14px;
+  padding-top: 15px;
+  font-size: 13px;
 }
 @media (max-width: 912px) {
   .footer_dhh_1_0_0__contact {
@@ -109,8 +109,11 @@
     width: 65%;
     margin: 0 auto;
   }
+  .footer_dhh_1_0_0__pic2 {
+    margin: 0 auto;
+  }
   .footer_dhh_1_0_0__pic2 img {
-    width: 26%;
+    width: 40%;
   }
   .footer_dhh_1_0_0__pic3 {
     justify-content: center;
