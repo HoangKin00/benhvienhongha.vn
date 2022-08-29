@@ -20,7 +20,6 @@
   border-radius: 10px;
   display: flex;
   background-color: white;
-  justify-content: space-between;
   align-items: center;
   gap: 40px;
   margin-top: 15px;
@@ -114,12 +113,15 @@
     gap: 10px;
   }
   .doctor_dhh_1_0_0__item {
-    width: 29%;
+    width: 24%;
   }
 }
 @media (max-width: 428px) {
+  .doctor_dhh_1_0_0 {
+    padding: 20px 0;
+  }
   .doctor_dhh_1_0_0__title {
-    font-size: 22px;
+    font-size: 17px;
   }
   .doctor_dhh_1_0_0__list {
     flex-wrap: wrap;
@@ -127,10 +129,10 @@
     justify-content: center;
   }
   .doctor_dhh_1_0_0__box {
-    margin-top: 10px;
+    margin-top: 15px;
   }
   .doctor_dhh_1_0_0__name h2 {
-    font-size: 18px;
+    font-size: 16px;
     margin: 0;
   }
 }

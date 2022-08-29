@@ -52,6 +52,9 @@
         font-size: 18px;
         img {
             margin-right: 5px;
+            width: 35px;
+            height: auto;
+            display: block;
         }
     }
     &__form {
@@ -129,7 +132,8 @@
         }
         &__note {
             width: 100%;
-            padding: 15px 0px 5px 15px;
+            margin: 0px 0px 5px 15px;
+            padding: 0;
         }
         &__form {
             width: 90%;

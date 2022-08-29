@@ -154,11 +154,13 @@
         }
     }
     @media (max-width: 767px) {
+        padding: 20px 0;
         &__title {
-            font-size: 19px;
+            font-size: 17px;
         }
         &__box {
             flex-direction: column;
+            margin: 10px auto 0;
         }
         &__video1 {
             width: 100%;
@@ -172,6 +174,7 @@
             position: absolute;
             padding: 10px;
             bottom: 0;
+            font-size: 14px;
         }
         &__text {
             font-size: 14px;

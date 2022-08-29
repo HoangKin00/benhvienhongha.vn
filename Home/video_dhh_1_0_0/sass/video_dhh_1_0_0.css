@@ -155,11 +155,15 @@
   }
 }
 @media (max-width: 767px) {
+  .video_dhh_1_0_0 {
+    padding: 20px 0;
+  }
   .video_dhh_1_0_0__title {
-    font-size: 19px;
+    font-size: 17px;
   }
   .video_dhh_1_0_0__box {
     flex-direction: column;
+    margin: 10px auto 0;
   }
   .video_dhh_1_0_0__video1 {
     width: 100%;
@@ -173,6 +177,7 @@
     position: absolute;
     padding: 10px;
     bottom: 0;
+    font-size: 14px;
   }
   .video_dhh_1_0_0__text {
     font-size: 14px;
