@@ -1,7 +1,6 @@
 * {
     transition: all 0.3s ease-in-out;
 }
-
 .doctor_dhh_1_0_0 {
     background: url(../images/doctor-bg.jpg) center 0 no-repeat;
     background-size: cover;
@@ -10,11 +9,11 @@
     &__title {
         font-size: 25px;
         color: #033e8f;
-        font-weight: 600;
+        font-weight: bold;
         text-align: center;
     }
     &__box {
-        padding: 25px 100px;
+        padding: 20px 100px;
         border: 2px solid #054b94;
         border-radius: 10px;
         display: flex;
@@ -29,6 +28,7 @@
         img {
             width: 100%;
             height: auto;
+            display: block;
         }
     }
     &__info {
@@ -43,10 +43,11 @@
         }
     }
     &__name {
-        p {
+        h2 {
             font-size: 20px;
             font-weight: bold;
             color: #054b94;
+            margin: 0;
         }
     }
     ul {
@@ -70,6 +71,7 @@
             border-radius: 100%;
             border: 2px solid white;
             height: auto;
+            display: block;
         }
     }
     &__item.active {
@@ -78,22 +80,29 @@
             border-radius: 100%;
         }
     }
-    @media (max-width: 1180px) {
-        &__title {
-            font-size: 23px;
+    @media (max-width: 1024px) {
+        &__avatar {
+            width: 36%;
         }
     }
     @media (max-width: 820px) {
         &__box {
-            padding: 25px 25px;
+            padding: 20px 20px;
         }
         &__title {
             font-size: 28px;
         }
     }
+    @media (max-width: 768px) {
+        &__avatar {
+            width: 45%;
+        }
+    }
     @media (max-width: 767px) {
         &__box {
             flex-direction: column;
+            padding: 10px;
+            gap: 15px;
         }
         &__avatar {
             width: 100%;
@@ -109,12 +118,12 @@
             gap: 10px;
         }
         &__item {
-            width: 13%;
+            width: 29%;
         }
     }
     @media (max-width: 428px) {
         &__title {
-            font-size: 24px;
+            font-size: 22px;
         }
         &__list {
             flex-wrap: wrap;
@@ -124,12 +133,16 @@
         &__box {
             margin-top: 10px;
         }
-    }
-    @media (max-width: 280px) {
         &__name {
-            p {
-                font-size: 20px;
+            h2 {
+                font-size: 18px;
+                margin: 0;
             }
+        }
+    }
+    @media (max-width: 320px) {
+        &__title {
+            font-size: 20px;
         }
     }
 }
