@@ -94,6 +94,9 @@
   }
 }
 @media (max-width: 767px) {
+  .doctor_dhh_1_0_0 {
+    padding: 20px 0;
+  }
   .doctor_dhh_1_0_0__box {
     flex-direction: column;
     padding: 15px;
@@ -118,25 +121,20 @@
     width: 18%;
   }
 }
-@media (max-width: 428px) {
-  .doctor_dhh_1_0_0 {
-    padding: 20px 0;
-  }
-  .doctor_dhh_1_0_0__title {
-    font-size: 17px;
-  }
-  .doctor_dhh_1_0_0__list {
-    flex-wrap: wrap;
-    margin-top: 10px;
-    justify-content: center;
-  }
-  .doctor_dhh_1_0_0__box {
-    margin-top: 15px;
-  }
-  .doctor_dhh_1_0_0__name {
-    font-size: 16px;
-    margin: 0;
-  }
+.doctor_dhh_1_0_0__title {
+  font-size: 17px;
+}
+.doctor_dhh_1_0_0__list {
+  flex-wrap: wrap;
+  margin-top: 10px;
+  justify-content: center;
+}
+.doctor_dhh_1_0_0__box {
+  margin-top: 15px;
+}
+.doctor_dhh_1_0_0__name {
+  font-size: 16px;
+  margin: 0;
 }
 @media (max-width: 320px) {
   .doctor_dhh_1_0_0__title {

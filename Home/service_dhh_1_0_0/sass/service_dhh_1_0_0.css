@@ -60,6 +60,7 @@
   display: flex;
   width: 65%;
   margin-right: 20px;
+  gap: 10px;
 }
 .service_dhh_1_0_0__form input {
   color: #3d82be;
@@ -140,6 +141,7 @@
     width: 90%;
     flex-direction: column;
     margin-right: 0;
+    gap: 0;
   }
   .service_dhh_1_0_0__form input {
     width: 100%;

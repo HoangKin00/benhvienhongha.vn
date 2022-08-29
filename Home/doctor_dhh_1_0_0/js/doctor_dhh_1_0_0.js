@@ -93,7 +93,6 @@ for (let i = 0; i < doctorItem.length; i++) {
         </h2>
         ${doctor[i].info}
     </div>`;
-        console.log(HTML);
         doctorBox.innerHTML = HTML;
     });
 }
