@@ -37,6 +37,7 @@
 }
 .footer_dhh_1_0_0__pic2 img {
   height: auto;
+  width: 90px;
 }
 .footer_dhh_1_0_0__pic3 {
   display: flex;
@@ -46,13 +47,16 @@
 }
 .footer_dhh_1_0_0__pic3 img {
   width: 25px;
+  height: auto;
 }
 .footer_dhh_1_0_0__pic3 .img-ct {
   width: 100px;
+  height: auto;
 }
 .footer_dhh_1_0_0__note {
   color: #fff;
   padding-top: 20px;
+  font-size: 14px;
 }
 @media (max-width: 912px) {
   .footer_dhh_1_0_0__contact {

@@ -23,6 +23,7 @@
         img {
             width: 100%;
             height: auto;
+            display: block;
         }
     }
     &__text {
@@ -30,11 +31,12 @@
         font-weight: 600;
         font-size: 20px;
         text-align: center;
-        padding: 10px 0 15px;
         color: #00abe5;
         position: relative;
+        margin: 10px 0 20px;
     }
     &__detail {
+        padding: 10px 20px;
         background-color: #00abe5;
         width: 100%;
         margin: 0 auto;
@@ -44,13 +46,12 @@
         justify-content: space-between;
     }
     &__note {
-        padding: 15px 30px;
         display: flex;
         align-items: center;
         color: #fff;
         font-size: 18px;
         img {
-            padding: 0 5px;
+            margin-right: 5px;
         }
     }
     &__form {
@@ -71,6 +72,8 @@
         padding: 7px 25px;
         color: #fff;
         background-color: #dc3721;
+        display: block;
+        cursor: pointer;
     }
     @media (max-width: 1180px) {
         &__title {
@@ -78,7 +81,6 @@
         }
         &__text {
             font-size: 18px;
-            padding: 10px 0;
         }
         &__form {
             width: 66%;
@@ -102,16 +104,24 @@
             padding: 9px 15px;
         }
     }
-    @media (max-width: 428px) {
+    @media (max-width: 767px) {
+        padding: 20px 0;
         &__title {
-            font-size: 22px;
+            font-size: 17px;
+            margin: 0 0 10px 0;
+            padding: 0;
         }
         &__box {
             gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+        }
+        &__item {
+            width: 48%;
         }
         &__text {
             font-size: 14px;
-            padding: 5px 0 10px;
+            margin: 5px 0 0;
         }
         &__detail {
             flex-direction: column;
@@ -146,9 +156,6 @@
         }
         &__item {
             width: 100%;
-        }
-        &__text {
-            font-size: 15px;
         }
     }
 }

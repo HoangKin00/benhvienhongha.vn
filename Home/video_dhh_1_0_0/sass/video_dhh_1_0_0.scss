@@ -7,7 +7,7 @@
         text-align: center;
     }
     &__box {
-        margin: 30px auto 0;
+        margin: 20px auto 0;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -20,15 +20,18 @@
     }
     &__item1 {
         position: relative;
+        border-radius: 7px;
     }
     &__pic {
-        border-radius: 0 0 15px 15px;
+        border-radius: 7px;
         background: #000;
         cursor: pointer;
         img {
             width: 100%;
             display: block;
+            height: auto;
             opacity: .5;
+            border-radius: 10px;
         }
          :hover {
             opacity: .8;
@@ -43,8 +46,9 @@
             background-size: 100%;
             width: 60px;
             height: 60px;
-            left: calc(50% - 23px);
-            top: calc(50% - 55px);
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
             transition: 0.3s;
         }
     }
@@ -57,8 +61,6 @@
         &::after {
             width: 36px;
             height: 36px;
-            left: calc(45% - 5px);
-            top: calc(67% - 30px);
         }
         img {
             transform: scale(1);
@@ -77,6 +79,7 @@
         font-size: 18px;
         text-align: center;
         padding: 15px 5px;
+        border-radius: 0 0 7px 7px;
     }
     &__detail {
         display: flex;

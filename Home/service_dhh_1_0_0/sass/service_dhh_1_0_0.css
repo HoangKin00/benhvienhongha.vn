@@ -23,17 +23,19 @@
 .service_dhh_1_0_0__pic img {
   width: 100%;
   height: auto;
+  display: block;
 }
 .service_dhh_1_0_0__text {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 20px;
   text-align: center;
-  padding: 10px 0 15px;
   color: #00abe5;
   position: relative;
+  margin: 10px 0 20px;
 }
 .service_dhh_1_0_0__detail {
+  padding: 10px 20px;
   background-color: #00abe5;
   width: 100%;
   margin: 0 auto;
@@ -43,14 +45,13 @@
   justify-content: space-between;
 }
 .service_dhh_1_0_0__note {
-  padding: 15px 30px;
   display: flex;
   align-items: center;
   color: #fff;
   font-size: 18px;
 }
 .service_dhh_1_0_0__note img {
-  padding: 0 5px;
+  margin-right: 5px;
 }
 .service_dhh_1_0_0__form {
   display: flex;
@@ -70,6 +71,8 @@
   padding: 7px 25px;
   color: #fff;
   background-color: #dc3721;
+  display: block;
+  cursor: pointer;
 }
 @media (max-width: 1180px) {
   .service_dhh_1_0_0__title {
@@ -77,7 +80,6 @@
   }
   .service_dhh_1_0_0__text {
     font-size: 18px;
-    padding: 10px 0;
   }
   .service_dhh_1_0_0__form {
     width: 66%;
@@ -101,16 +103,26 @@
     padding: 9px 15px;
   }
 }
-@media (max-width: 428px) {
+@media (max-width: 767px) {
+  .service_dhh_1_0_0 {
+    padding: 20px 0;
+  }
   .service_dhh_1_0_0__title {
-    font-size: 22px;
+    font-size: 17px;
+    margin: 0 0 10px 0;
+    padding: 0;
   }
   .service_dhh_1_0_0__box {
     gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  .service_dhh_1_0_0__item {
+    width: 48%;
   }
   .service_dhh_1_0_0__text {
     font-size: 14px;
-    padding: 5px 0 10px;
+    margin: 5px 0 0;
   }
   .service_dhh_1_0_0__detail {
     flex-direction: column;
@@ -145,8 +157,5 @@
   }
   .service_dhh_1_0_0__item {
     width: 100%;
-  }
-  .service_dhh_1_0_0__text {
-    font-size: 15px;
   }
 }/*# sourceMappingURL=service_dhh_1_0_0.css.map */
