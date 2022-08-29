@@ -182,7 +182,7 @@ function addslider01() {
 function addHTML(idx, data) {
     HTML2 = `
             <div class="customer_dhh_1_0_0__left">
-            <img src="${data[idx].img}" alt="">
+            <img class="modal-clip" data-video="XUvZZHJHabo" src="${data[idx].img}" alt="">
             </div>
             <div class="customer_dhh_1_0_0__right">
                 ${data[idx].info}

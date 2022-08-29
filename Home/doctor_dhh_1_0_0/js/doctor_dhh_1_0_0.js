@@ -11,7 +11,7 @@ const doctor = [{
             <li>- Thành viên hiệp hội Thẩm mỹ Hàn quốc</li>
             <li>- 10 năm tu nghiệp tại Hàn Quốc</li>
         </ul
-        `
+        `,
     },
     {
         service: "Th.S BS",
@@ -22,7 +22,7 @@ const doctor = [{
         <li>- Bác sĩ chuyên khoa ngoại > 25 năm kinh nghiệm</li>
         <li>- Giám đốc bệnh viện đa khoa Hồng Hà</li>
     </ul>
-    `
+    `,
     },
     {
         service: "PGS. TS",
@@ -33,8 +33,7 @@ const doctor = [{
     <li>- Tốt nghiệp Đại học Y Hà Nội (khóa 1976-1982)</li>
     <li>- Là chuyên gia sản khoa hàng đầu Việt Nam, được tu nghiệp nhiều năm tại Hà Lan, Pháp,…</li>
     <li>- Bác sĩ giỏi chuyên môn và có nhiều năm kinh nghiệm thăm khám, điều trị các bệnh rong kinh, rong huyết; viêm nhiễm phụ khoa, viêm cổ tử cung, viêm vùng chậu, viêm phần phụ, viêm tắc ống dẫn trứng,…</li>
-</ul>`
-
+</ul>`,
     },
     {
         service: "ThS. BS",
@@ -45,7 +44,7 @@ const doctor = [{
     <li>- Thạc sĩ, bác sĩ chuyên khoa sản Đại học Y Hà Nội</li>
     <li>- Là chuyên gia sản khoa hàng đầu Việt Nam, được tu nghiệp nhiều năm tại Hà Lan, Pháp,…</li>
     <li>- Bác sĩ Bệnh viện Phụ sản Trung ương</li>
-</ul>`
+</ul>`,
     },
     {
         service: "BS CKI",
@@ -57,7 +56,7 @@ const doctor = [{
     <li>- Bác sĩ 30 năm kinh nghiệm điều trị vô sinh hiếm muộn & bệnh phụ khoa</li>
     <li>- Bác sĩ chuyên khoa Phụ sản – Bệnh viện Phụ sản Trung ương</li>
     <li>- Tốt nghiệp Đại học Y Hà Nội</li>
-</ul>`
+</ul>`,
     },
     {
         service: "Bác sĩ",
@@ -68,12 +67,12 @@ const doctor = [{
     <li>- Thành viên hiệp hội PTTM Hàn Quốc</li>
     <li>- 15 năm kinh nghiệm PTTM tạo hình khuôn mặt và vóc dáng</li>
     <li>- Thực hiện thành công > 1000 ca PTTM mỗi năm</li>
-</ul>`
+</ul>`,
     },
 ];
 
 const doctorItem = document.getElementsByClassName("doctor_dhh_1_0_0__item");
-console.log(doctorItem)
+console.log(doctorItem);
 const doctorBox = document.getElementsByClassName("doctor_dhh_1_0_0__box")[0];
 
 for (let i = 0; i < doctorItem.length; i++) {
@@ -81,7 +80,7 @@ for (let i = 0; i < doctorItem.length; i++) {
     let HTML = "";
     doctorItem[i].addEventListener("click", function() {
         HTML = `<div class="doctor_dhh_1_0_0__avatar">
-        <img src="${doctor[i].img}" alt="">
+        <img width="313" height="352" src="${doctor[i].img}" alt="Bác sĩ">
     </div>
     <div class="doctor_dhh_1_0_0__info">
         <div class="doctor_dhh_1_0_0__doctor">
@@ -89,12 +88,12 @@ for (let i = 0; i < doctorItem.length; i++) {
                 ${doctor[i].service}
             </p>
         </div>
-        <h2 class="doctor_dhh_1_0_0__name">
+        <div class="doctor_dhh_1_0_0__name">
             <p>${doctor[i].name}</p>
-        </h2>
+        </div>
         ${doctor[i].info}
     </div>`;
-        console.log(HTML)
+        console.log(HTML);
         doctorBox.innerHTML = HTML;
     });
 }
@@ -113,3 +112,9 @@ function setActiveDoctor(element, className, event) {
 }
 
 setActiveDoctor(".doctor_dhh_1_0_0__item", "active", "click");
+
+const scrollTo = function(activeEl) {
+    const height = activeEl.offsetHeight;
+    doctorBox.style.height = `${height}px`;
+};
+scrollTo(doctorBox);

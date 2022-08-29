@@ -1,11 +1,12 @@
+* {
+    transition: all 0.3s ease-in-out;
+}
+
 .doctor_dhh_1_0_0 {
     background: url(../images/doctor-bg.jpg) center 0 no-repeat;
     background-size: cover;
     min-height: auto;
     padding: 30px 0;
-    h3:before {
-        position: absolute !important;
-    }
     &__title {
         font-size: 25px;
         color: #033e8f;
@@ -42,7 +43,6 @@
         }
     }
     &__name {
-        position: relative;
         p {
             font-size: 20px;
             font-weight: bold;
@@ -53,7 +53,7 @@
         padding: 0;
         list-style: none;
         li {
-            color: #000;
+            color: #054b94;
         }
     }
     &__list {
@@ -63,11 +63,13 @@
         justify-content: center;
     }
     &__item {
-        width: 10%;
+        width: 12%;
         cursor: pointer;
         img {
             width: 100%;
             border-radius: 100%;
+            border: 2px solid white;
+            height: auto;
         }
     }
     &__item.active {
@@ -81,18 +83,15 @@
             font-size: 23px;
         }
     }
-    @media (max-width:820px) {
+    @media (max-width: 820px) {
         &__box {
             padding: 25px 25px;
         }
-        &__name p {
-            font-size: 18px;
-        }
-        &__list {
-            gap: 10px;
+        &__title {
+            font-size: 28px;
         }
     }
-    @media (max-width:767px) {
+    @media (max-width: 767px) {
         &__box {
             flex-direction: column;
         }
@@ -113,9 +112,9 @@
             width: 13%;
         }
     }
-    @media (max-width:428px) {
+    @media (max-width: 428px) {
         &__title {
-            font-size: 22px;
+            font-size: 24px;
         }
         &__list {
             flex-wrap: wrap;
@@ -124,23 +123,13 @@
         }
         &__box {
             margin-top: 10px;
-            padding: 20px;
-            gap: 10px;
         }
     }
-    @media (max-width: 320px) {
-        &__title {
-            font-size: 20px;
-        }
-    }
-    @media (max-width:280px) {
+    @media (max-width: 280px) {
         &__name {
             p {
-                margin: 0;
+                font-size: 20px;
             }
-        }
-        &__box {
-            padding: 15px;
         }
     }
 }
