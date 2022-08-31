@@ -130,15 +130,19 @@
   }
   .service_dhh_1_0_0__detail {
     flex-direction: column;
-    padding-bottom: 15px;
+    padding: 10px 15px;
   }
   .service_dhh_1_0_0__note {
     width: 100%;
     margin: 0px 0px 5px 15px;
     padding: 0;
+    justify-content: center;
+  }
+  .service_dhh_1_0_0__note img {
+    display: none;
   }
   .service_dhh_1_0_0__form {
-    width: 90%;
+    width: 100%;
     flex-direction: column;
     margin-right: 0;
     gap: 0;
