@@ -218,6 +218,9 @@
   }
 }
 @media (max-width: 767px) {
+  .customer_dhh_1_0_0 {
+    padding: 20px 0;
+  }
   .customer_dhh_1_0_0__box {
     gap: 10px;
     margin-top: 10px;
