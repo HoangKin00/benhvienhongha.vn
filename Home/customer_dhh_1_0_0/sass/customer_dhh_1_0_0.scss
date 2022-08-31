@@ -1,23 +1,20 @@
+@import "customer_ytb";
 * {
     transition: all 0.3s ease-in-out;
 }
 
 .customer_dhh_1_0_0 {
-    padding: 30px 0 0;
+    padding: 30px 0;
     &__title {
         text-align: center;
         p {
             font-size: 25px;
             color: #033e8f;
-            font-weight: 600;
-            margin: 0;
+            font-weight: bold;
         }
         span {
-            color: #000;
+            color: #033e8f;
             font-weight: 500;
-        }
-        br {
-            display: none;
         }
     }
     &__box {
@@ -40,10 +37,13 @@
         border-radius: 10px;
         cursor: pointer;
         p {
-            margin: 0;
-            color: #000;
-            font-weight: 600;
             font-size: 14px;
+            margin: 0;
+            color: #033e8f;
+            font-weight: 600;
+        }
+        span {
+            font-size: 18px;
         }
     }
     &__client {
@@ -54,10 +54,25 @@
     }
     &__left {
         width: 55%;
+        position: relative;
+        opacity: 0.8;
+        // z-index: 100;
         img {
             width: 100%;
             cursor: pointer;
+            height: auto;
+            display: block;
         }
+    }
+    &__left:hover {
+        opacity: 1;
+    }
+    &__video {
+        width: 15% !important;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     &__right {
         width: 45%;
@@ -66,8 +81,11 @@
     &__list {
         display: flex;
         gap: 5px;
+        align-items: flex-start;
         img {
             width: 49%;
+            height: auto;
+            display: block;
         }
     }
     &__demo {
@@ -76,6 +94,7 @@
         justify-content: center;
         img {
             width: 38%;
+            height: auto;
         }
     }
     &__name {
@@ -105,10 +124,7 @@
             font-size: 18px;
         }
     }
-    @media (max-width:1180px) {
-        &__title p {
-            font-size: 23px;
-        }
+    @media (max-width: 1180px) {
         &__left {
             width: 59%;
         }
@@ -116,78 +132,77 @@
             flex-wrap: wrap;
         }
         &__item {
-            width: 30%;
-            br {
-                display: none;
-            }
+            width: 40%;
         }
     }
-    @media (max-width:820px) {
+    @media (max-width: 820px) {
         &__left {
             width: 53%;
         }
+        &__title {
+            span {
+                font-size: 15px;
+            }
+        }
+        &__item {
+            width: 48%;
+        }
         &__name {
-            font-size: 16px;
+            font-size: 18px;
         }
     }
-    @media (max-width:768px) {
+    @media (max-width: 768px) {
+        &__title {
+            span {
+                br {
+                    display: none;
+                }
+            }
+        }
         &__item {
             p {
                 font-size: 14px;
             }
         }
-        &__title {
-            br {
-                display: none;
-            }
-        }
+    }
+    @media (max-width: 767px) {
         &__box {
             gap: 10px;
+            margin-top: 10px;
         }
-        &__item {
-            width: 32%;
+        &__name {
+            font-size: 17px;
         }
-    }
-    @media (max-width:767px) {
         &__title {
-            text-align: justify;
             p {
-                font-size: 22px;
-                text-align: center;
-            }
-            br {
-                display: unset;
-            }
-            span {
-                text-align: justify;
-                br {
-                    display: none!important;
-                }
+                font-size: 18px;
             }
         }
         &__item {
             width: 100%;
-            padding: 8px 10px;
         }
         &__client {
             flex-wrap: wrap;
+            gap: 15px
         }
         &__left {
             width: 100%;
         }
         &__right {
             width: 100%;
-        }
-        &__box {
-            gap: 5px;
-        }
-    }
-    @media (max-width:320px) {
-        &__title {
-            p {
-                font-size: 20px;
+            ul li {
+                font-size: 14px;
             }
         }
+    }
+    @media (max-width: 375px) {
+        &__title {
+            p {
+                font-size: 17px;
+            }
+        }
+    }
+    @media (max-width: 320px) {
         &__item {
             p {
                 font-size: 13px;
