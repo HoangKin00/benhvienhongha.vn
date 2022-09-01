@@ -70,6 +70,10 @@
 .contact_dhh_1_0_0__item2 {
   width: 40%;
 }
+.contact_dhh_1_0_0__item2 article {
+  text-align: center;
+  margin: 0 auto;
+}
 .contact_dhh_1_0_0__item2 input {
   width: 100%;
   padding: 10px;
@@ -109,10 +113,6 @@
   .contact_dhh_1_0_0__item2 {
     width: 100%;
   }
-}
-
-article {
-  text-align: center;
 }
 
 .icon img {
