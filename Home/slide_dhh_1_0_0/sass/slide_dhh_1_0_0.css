@@ -1,3 +1,6 @@
+.slide_dhh_1_0_0 {
+  margin-top: 83px;
+}
 .slide_dhh_1_0_0 .slider {
   overflow: hidden;
   position: relative;
@@ -55,9 +58,19 @@
   height: 100%;
   border: 0;
 }
+@media (max-width: 1200px) {
+  .slide_dhh_1_0_0 {
+    margin-top: 63px;
+  }
+}
 @media (max-width: 767px) {
   .slide_dhh_1_0_0 .slider {
     padding-bottom: 178.12% !important;
+  }
+}
+@media (max-width: 320px) {
+  .slide_dhh_1_0_0 {
+    margin-top: 55px;
   }
 }
 

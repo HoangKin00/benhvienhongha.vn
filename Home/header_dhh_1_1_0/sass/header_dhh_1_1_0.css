@@ -16,8 +16,7 @@
   }
 }
 .header_dhh_1_1_0 {
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;

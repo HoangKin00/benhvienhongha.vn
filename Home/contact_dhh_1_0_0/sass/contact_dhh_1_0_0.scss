@@ -59,6 +59,10 @@
 
 .contact_dhh_1_0_0__item2 {
     width: 40%;
+    article {
+        text-align: center;
+        margin: 0 auto;
+    }
     input {
         width: 100%;
         padding: 10px;
@@ -93,10 +97,6 @@
     @media (max-width: 767px) {
         width: 100%;
     }
-}
-
-article {
-    text-align: center;
 }
 
 .icon img {
