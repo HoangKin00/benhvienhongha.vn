@@ -19,7 +19,7 @@
 .slide_dhh_1_0_0 .sliderNav {
   position: absolute;
   top: 40%;
-  z-index: 999;
+  z-index: 9;
   width: 100%;
 }
 .slide_dhh_1_0_0 .sliderNav:hover {
