@@ -33,7 +33,7 @@
 .slide_dhh_1_0_0 .sliderNext {
   position: relative;
   float: right;
-  right: 50px;
+  right: 10%;
 }
 .slide_dhh_1_0_0 .sliderNext img, .slide_dhh_1_0_0 .sliderPrev img {
   width: 32px;
